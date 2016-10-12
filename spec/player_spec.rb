@@ -17,11 +17,9 @@ describe Player do
     end
   end
 
-  describe "#attack" do
-    it "reduces plays hp by 10" do
-      expect{player1.attack(player2)}.to change{player2.hp}.by(-10)
+  describe "#reduce_health" do
+    it "reduces the players hp" do
+      expect{player1.reduce_health}.to change{player1.hp}.by(-Player::ATTACK_VALUE)
     end
   end
-
-
 end

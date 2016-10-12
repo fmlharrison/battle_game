@@ -1,3 +1,5 @@
+
+
 class Player
   attr_reader :name, :hp
 
@@ -9,12 +11,8 @@ class Player
     @hp = hp
   end
 
-  def attack(player)
-    player.reduce_health
-  end
-
   def reduce_health
-    @hp -= ATTACK_VALUE
+    @hp -= 10
   end
 
 end
