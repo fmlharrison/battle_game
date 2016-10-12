@@ -6,3 +6,4 @@ feature 'See player 2\'s hit points' do
     expect(page.text).to include("Kittens's Hit Points : 100HP")
   end
 end
+ 

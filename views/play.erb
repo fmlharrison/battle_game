@@ -5,6 +5,12 @@
     <h2><%= @player_1_name %> Vs. <%= @player_2_name %></h2>
   </div>
   <div>
-    <h2><%= @player_2_name %>'s Hit Points : 100HP</h2>
+    <h3><%= @player_2_name %>'s Hit Points : 100HP</h3>
+  </div>
+  <div>
+    <form action='/attack'>
+      <input type="submit" value="Attack!" />
+    </form>
   </div>
 </body>
+</html>
