@@ -1,6 +1,13 @@
 <html>
 <body>
-  <h1><%=@player_1_name%> lays the SMACKDOWN on <%=@player_2_name%>!</h1>
-  <img style="-webkit-user-select: none" src="https://m.popkey.co/8aab94/1xN07.gif">
+  <h1><%= @player_1.name %> lays the SMACKDOWN on <%= @player_2.name %>!</h1>
+  <div>
+    <img style="-webkit-user-select: none" src="https://m.popkey.co/8aab94/1xN07.gif">
+  </div>
+  <p><%= @player_2.name %>'s HP was reduced by 10</p>
+  <div>
+    <form action="/play">
+      <input type="submit" value="Next Turn!" />
+    </form>
 </body>
 </html>
