@@ -2,10 +2,10 @@
 <body>
   <h1>Rumble in the Digital Jungle</h1>
   <div>
-    <h2><%= @player_1.name %> Vs. <%= @player_2.name %></h2>
+    <h2><%= @battle.player_1.name %> Vs. <%= @battle.player_2.name %></h2>
   </div>
   <div>
-    <h3><%= @player_1.hp %> HP : <%= @player_2.hp %> HP</h3>
+    <h3><%= @battle.player_1.hp %> HP : <%= @battle.player_2.hp %> HP</h3>
   </div>
   <div>
     <form action='/attack'>
