@@ -5,7 +5,7 @@ class Player
 
   HP = 100
   ATTACK_VALUE = 10
-
+ 
   def initialize(name, hp=HP)
     @name = name
     @hp = hp
