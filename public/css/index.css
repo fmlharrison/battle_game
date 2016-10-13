@@ -83,3 +83,7 @@ input[type=submit] {
   background-color: rgb(255, 211, 238);
   cursor: url(http://orig09.deviantart.net/7b85/f/2016/025/d/f/katana_cursor_by_pha_li-d9p9f4c.png), auto;
 }
+
+.samurai img {
+  width: 6%;
+}
