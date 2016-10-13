@@ -1,13 +1,32 @@
-<h1>Battle!<h1>
-  <h2>Sign in to play<h2/>
-<form action="/names" method="post">
-  <label for="player_1_name">
-    Player 1 name
-  <input type="text" name="player_1_name">
-</label>
-<label for="player_1_name">
-    Player 2 name
-  <input type="text" name="player_2_name">
-</label>
-  <input type="submit" value="Submit">
-<form>
+<html>
+<head>
+  <link rel="stylesheet" href="public/reset.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <h1>Battle!</h1>
+
+    <h2>Sign in to play</h2>
+
+    <form action="/names" method="post">
+      <div class="players">
+        <div class="player1">
+          <label for="player_1_name">Player 1</label>
+          <input type="text" name="player_1_name" value="Enter Fighter">
+        </div>
+
+        <div class="player2">
+          <label for="player_1_name">Player 2</label>
+          <input type="text" name="player_2_name" value="Enter Fighter">
+        </div>
+
+        <div class="start">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    <form>
+
+
+  </body>
+
+</html>

@@ -18,6 +18,7 @@ feature 'Attack' do
     click_button('Attack!')
     click_button('Next Turn!')
     click_button('Attack!')
+    expect(page).not_to have_content('Kanye lays the SMACKDOWN on Kittens!')
     expect(page).to have_content('Kittens lays the SMACKDOWN on Kanye!')
   end
 
@@ -26,6 +27,7 @@ feature 'Attack' do
     click_button('Attack!')
     click_button('Next Turn!')
     click_button('Attack!')
+    expect(page).not_to have_content('Kittens\'s HP was reduced by 10')
     expect(page).to have_content('Kanye\'s HP was reduced by 10')
   end
 end
