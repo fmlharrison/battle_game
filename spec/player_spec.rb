@@ -6,7 +6,7 @@ describe Player do
   subject(:player2) { described_class.new("Chris") }
 
   describe "#name" do
-    it "returs players name" do
+    it "returns players name" do
       expect(player1.name).to eq "Felix"
     end
   end

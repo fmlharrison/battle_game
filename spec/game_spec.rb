@@ -20,5 +20,17 @@ describe Game do
       game.attack(player_2)
       expect(player_2).to have_received(:reduce_health)
     end
+    it "rotates the players turns" do
+      allow(game).to receive(:new_turn)
+      game.attack(player_2)
+      expect(game).to have_received(:new_turn)
+    end
+  end
+
+  describe '#new_turn' do
+    it "changes the player turn" do
+      game.new_turn
+      expect(game.turn[0]).to eq player_2
+    end
   end
 end

@@ -1,10 +1,10 @@
 <html>
 <body>
-  <h1><%= @battle.player_1.name %> lays the SMACKDOWN on <%= @battle.player_2.name %>!</h1>
+  <h1><%= @battle.turn[1].name %> lays the SMACKDOWN on <%= @battle.turn[0].name %>!</h1>
   <div>
     <img style="-webkit-user-select: none" src="https://m.popkey.co/8aab94/1xN07.gif">
   </div>
-  <p><%= @battle.player_2.name %>'s HP was reduced by 10</p>
+  <p><%= @battle.turn[0].name %>'s HP was reduced by 10</p>
   <div>
     <form action="/play">
       <input type="submit" value="Next Turn!" />
