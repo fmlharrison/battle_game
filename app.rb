@@ -3,28 +3,23 @@ require_relative './lib/player'
 require_relative './lib/game'
 
 class Battle < Sinatra::Base
-  enable :sessions
 
   get '/' do
     erb(:index)
   end
 
   post '/names' do
-    player_1 = Player.new(params[:player_1_name])
-    player_2 = Player.new(params[:player_2_name])
-    $battle = Game.new(player_1, player_2)
+    Game.set_game(Game.new(Player.new(params[:player_1_name], Player.new(params[:player_2_name]))
     redirect to('/play')
   end
 
   get '/play' do
-    @battle = $battle
     erb(:play)
   end
 
   get '/attack' do
-    @battle = $battle
-    @battle.attack(@battle.turn[1])
-    if @battle.losing_player == nil
+    Game.view_game.attack(Game.view_game.turn[1])
+    if Game.view_game.losing_player == nil
       erb(:attack)
     else
       redirect to('/game_over')
@@ -32,7 +27,6 @@ class Battle < Sinatra::Base
   end
 
   get '/game_over' do
-    @battle = $battle
     erb(:game_over)
   end
 

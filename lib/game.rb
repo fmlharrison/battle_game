@@ -2,6 +2,16 @@ require_relative 'player'
 
 class Game
 
+  @@current_game = nil
+
+  def self.view_game
+    @@current_game
+  end
+
+  def self.set_game(game)
+    @@current_game = game
+  end
+
   attr_reader :turn, :losing_player
 
   def initialize(player_1, player_2)
