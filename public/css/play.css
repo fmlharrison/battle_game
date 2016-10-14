@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'hiroshi';
+    src: url('hirosh.normal-webfont.woff2') format('woff2'),
+         url('hirosh.normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*html {
+  background: url("http://i.imgur.com/KTN6r.jpg");
+  background-size: cover;
+}*/
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'hiroshi';
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-shadow: 2px 2px 4px white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px white;
+  font-family: 'hiroshi';
+  margin-bottom: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px white;
+  font-family: 'hiroshi';
+  margin-top: 5px
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px white;
+  font-family: 'hiroshi';
+}
+
+img {
+  width: 50%
+}
+
+.players {
+  /*border: 1px solid red;*/
+  width: 80%;
+  height: 35%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.player1 {
+  float: left;
+}
+
+.vs {
+  float: left;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.player2 {
+  float: left;
+}
+
+.player1, .player2 {
+  width: 40%;
+}
+
+.vs {
+  width: 20%;
+}
+
+.turn {
+  text-align: center;
+}
+
+.attack {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*input {
+  text-align: center;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 50px;
+}*/
+
+
+input[type=submit] {
+  height: 100px;
+  width: 300px;
+  border: 3px solid;
+  border-color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: 'hiroshi';
+  background-color: rgb(255, 211, 238);
+  cursor: url(http://orig09.deviantart.net/7b85/f/2016/025/d/f/katana_cursor_by_pha_li-d9p9f4c.png), auto;
+}
+
+/*.samurai img {
+  width: 6%;
+}*/

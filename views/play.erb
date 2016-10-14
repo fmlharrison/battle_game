@@ -1,19 +1,35 @@
 <html>
+<head>
+  <link rel="stylesheet" href="public/reset.css" />
+  <link rel="stylesheet" href="css/play.css" />
+</head>
 <body>
 
-  <h1>Rumble in the Digital Jungle</h1>
+  <h1>Fear is the true opiate of combat</h1>
 
-  <div>
-    <h2><%= Game.view_game.player_1.name %> Vs. <%= Game.view_game.player_2.name %></h2>
+  <div class="players">
+
+    <div class="player1">
+      <h2><%= Game.view_game.player_1.name %></h2>
+      <h3><%= Game.view_game.player_1.hp %> HP</h3>
+    </div>
+
+    <div class="vs">
+      <img src="http://static1.comicvine.com/uploads/original/11112/111129141/5440487-1122329314-52705.png"/>
+    </div>
+
+    <div class="player2">
+      <h2><%= Game.view_game.player_2.name %></h2>
+      <h3><%= Game.view_game.player_2.hp %> HP</h3>
+    </div>
+
   </div>
 
-  <div>
-    <h3><%= Game.view_game.player_1.hp %> HP : <%= Game.view_game.player_2.hp %> HP</h3>
-  </div>
-
-  <div>
+  <div class="turn">
     <p>It's <%= Game.view_game.turn[0].name %>'s turn to ATTACK!<p/>
-  <div>
+  </div>
+
+  <div class="attack">
     <form action='/attack'>
       <input type="submit" value="Attack!" />
     </form>

@@ -9,7 +9,7 @@ class Battle < Sinatra::Base
   end
 
   post '/names' do
-    Game.set_game(Game.new(Player.new(params[:player_1_name], Player.new(params[:player_2_name]))
+    Game.set_game(Game.new(Player.new(params[:player_1_name]), Player.new(params[:player_2_name])))
     redirect to('/play')
   end
 
