@@ -7,10 +7,10 @@
 
 }
 
-/*html {
+html {
   background: url("http://i.imgur.com/KTN6r.jpg");
   background-size: cover;
-}*/
+}
 
 h1 {
   text-align: center;
@@ -18,13 +18,15 @@ h1 {
   font-family: 'hiroshi';
   margin-top: 100px;
   margin-bottom: 100px;
-  text-shadow: 2px 2px 4px white;
+  color: white;
+  text-shadow: 2px 2px 4px red;
 }
 
 h2 {
   text-align: center;
   font-size: 50px;
-  text-shadow: 1px 1px 2px white;
+  color: white;
+  text-shadow: 1px 1px 2px red;
   font-family: 'hiroshi';
   margin-bottom: 5px;
 }
@@ -32,7 +34,8 @@ h2 {
 h3 {
   text-align: center;
   font-size: 30px;
-  text-shadow: 1px 1px 2px white;
+  color: white;
+  text-shadow: 1px 1px 2px red;
   font-family: 'hiroshi';
   margin-top: 5px
 }
@@ -40,24 +43,35 @@ h3 {
 p {
   text-align: center;
   font-size: 30px;
-  text-shadow: 1px 1px 2px white;
+  color: white;
+  text-shadow: 1px 1px 2px red;
   font-family: 'hiroshi';
 }
 
-img {
-  width: 50%
+.vs img {
+  width: 70%
+}
+
+.sprite1 img {
+  width: 70%;
+}
+.sprite2 img {
+  transform: scaleX(-1);
+  width: 50%;
 }
 
 .players {
-  /*border: 1px solid red;*/
   width: 80%;
-  height: 35%;
+  height: 20%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .player1 {
   float: left;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .vs {
@@ -69,6 +83,9 @@ img {
 
 .player2 {
   float: left;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .player1, .player2 {
@@ -81,11 +98,35 @@ img {
 
 .turn {
   text-align: center;
+  margin-top: 60px;
+}
+
+.bottom {
+  width: 80%;
+  height: 25%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sprite1, .attack, .sprite2 {
+  width: 33%;
+}
+
+.sprite1 {
+  float: left;
+  text-align: center;
 }
 
 .attack {
+  float: left;
+  margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.sprite2 {
+  float: left;
   text-align: center;
 }
 
@@ -103,8 +144,9 @@ input[type=submit] {
   border: 3px solid;
   border-color: rgb(0, 0, 0);
   font-size: 60px;
+  color: white;
   font-family: 'hiroshi';
-  background-color: rgb(255, 211, 238);
+  background-color: rgb(120, 0, 14);
   cursor: url(http://orig09.deviantart.net/7b85/f/2016/025/d/f/katana_cursor_by_pha_li-d9p9f4c.png), auto;
 }
 
