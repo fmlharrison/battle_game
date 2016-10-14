@@ -4,3 +4,8 @@ def sign_in_and_play
   fill_in :player_2_name, with: "Kittens"
   click_button 'Fight!'
 end
+
+def single_turn
+  click_button('Attack!')
+  click_button('Next Turn!')
+end
